@@ -11,11 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261111-collections">
-  <script defer src="app.js?v=20261111-collections"></script>
+  <link rel="stylesheet" href="styles.css?v=20261111-nav">
+  <script defer src="app.js?v=20261111-nav"></script>
 </head>
 <body>
-  <div class="innova-strip"><a href="https://innova-boutique.com/" aria-label="Innova Boutique"><img src="media/innova-logo.png" alt="Innova"></a><span data-i="professional">DISTRIBUCIÓN PROFESIONAL · AKONI</span><a href="https://innova-boutique.com/#pedido" data-i="globalOrder">PEDIDO GLOBAL ↗</a></div>
+  <div class="innova-strip"><a href="https://innova-boutique.com/" target="_top" aria-label="Innova Boutique"><img src="media/innova-logo.png" alt="Innova"></a><span data-i="professional">DISTRIBUCIÓN PROFESIONAL · AKONI</span><a href="https://innova-boutique.com/#pedido" target="_top" data-i="globalOrder">PEDIDO GLOBAL ↗</a></div>
   <header class="header">
     <a class="wordmark" href="#/" aria-label="Akoni inicio">AKONI<small>FRAMING VISIONARIES</small></a>
     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -26,7 +26,7 @@
   </header>
   <main id="app"></main>
   <footer class="footer"><div><strong>INNOVA BOUTIQUE</strong><p data-i="footerIntro">Distribución y atención comercial de Akoni para Centroamérica y Latinoamérica.</p></div><div><a href="#/catalogo" data-i="catalog">Catálogo</a><a href="#/universo" data-i="universe">Universo Akoni</a><button type="button" data-order-trigger data-i="selection">Mi selección</button></div><div><p data-i="availability">Disponibilidad y condiciones sujetas a confirmación de Innova.</p><a href="mailto:info@innova-eyewear.com">info@innova-eyewear.com</a><small>© AKONI EYEWEAR · IMÁGENES DE AKONI</small></div></footer>
-  <div class="dock" id="dock"><button class="dock-help" type="button" id="helpButton"><small data-i="browseMode">MODO DE CONSULTA</small><strong id="modeLabel">Profesional</strong></button><div class="dock-brands"><a href="https://innova-boutique.com/alfred-kerbs/">ALFRED KERBS</a><a href="https://innova-boutique.com/balmain/">BALMAIN</a><a href="https://innova-boutique.com/silhouette/">Silhouette</a><a href="https://innova-boutique.com/jisco-en-construccion/">JISCO</a><span class="current">AKONI</span></div><button class="dock-order" type="button" data-order-trigger><span data-i="selection">Mi selección</span> <span class="dock-count" id="dockCount">0</span></button><button class="dock-hide" type="button" id="dockToggle" aria-label="Ocultar barra">⌄</button></div>
+  <div class="dock" id="dock"><button class="dock-help" type="button" id="helpButton"><small data-i="browseMode">MODO DE CONSULTA</small><strong id="modeLabel">Profesional</strong></button><div class="dock-brands"><a href="https://innova-boutique.com/alfred-kerbs/" target="_top">ALFRED KERBS</a><a href="https://innova-boutique.com/balmain/" target="_top">BALMAIN</a><a href="https://innova-boutique.com/silhouette/" target="_top">Silhouette</a><a href="https://innova-boutique.com/jisco-en-construccion/" target="_top">JISCO</a><span class="current">AKONI</span></div><button class="dock-order" type="button" data-order-trigger><span data-i="selection">Mi selección</span> <span class="dock-count" id="dockCount">0</span></button><button class="dock-hide" type="button" id="dockToggle" aria-label="Ocultar barra">⌄</button></div>
   <dialog id="modeDialog" class="mode-dialog"><form method="dialog"><button class="close" value="cancel" aria-label="Cerrar">×</button><span class="eyebrow">AKONI · INNOVA BOUTIQUE</span><h2 data-i="chooseMode">¿Cómo quieres explorar?</h2><p data-i="modeDescription">Las ópticas pueden preparar un pedido. Si estás explorando como particular, consulta el modelo que te guste en una óptica cercana.</p><div class="mode-options"><button type="button" data-mode="b2b"><strong data-i="professionalMode">Soy una óptica o profesional</strong><span data-i="professionalDescription">Prepara referencias y cantidades para un pedido profesional.</span></button><button type="button" data-mode="b2c"><strong data-i="personalMode">Soy cliente particular</strong><span data-i="personalDescription">Explora la colección y pregunta por tus modelos favoritos en una óptica cercana.</span></button></div></form></dialog>
   <div class="toast" id="toast" role="status"></div>
 </body>
