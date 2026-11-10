@@ -23,3 +23,19 @@
 @media(max-width:780px){.universe-chapter{display:flex;flex-direction:column;min-height:0}.universe-chapter.is-reversed .universe-chapter__image{order:0}.universe-chapter__image{min-height:0;height:380px}.universe-chapter__copy{padding:55px 6vw}}
 @media(max-width:520px){.universe-chapter__image{height:280px}.universe-chapter__copy{padding:45px 5vw}}
 @media(prefers-reduced-motion:reduce){.universe-chapter__image img,.editorial-image img,.card-image img,.image-cursor{transition:none!important}}
+
+/* Each studio image carries its own sampled corner color, so front and side
+   views blend with their card without altering the photograph. */
+.card-image:has(.card-image-stage){padding:0}
+.card-image-stage{position:absolute;inset:0;overflow:hidden}
+.card-image-stage img{position:absolute;inset:0;width:100%;height:100%;padding:20px;object-fit:contain;mask-image:none;transition:opacity .35s ease,transform .5s ease}
+.card-image-stage .card-image-back{opacity:0}
+@media(hover:hover) and (pointer:fine){.card:hover .card-image-stage.has-alternate .card-image-front{opacity:0}.card:hover .card-image-stage.has-alternate .card-image-back{opacity:1}.card:hover .card-image-stage img{transform:scale(1.035)}}
+.product-photo img,.variant-chip img{mask-image:none}
+.view-tabs{flex-wrap:wrap;gap:10px;margin-top:14px}
+.view-tabs button{display:grid;gap:6px;width:100px;padding:6px;background:#fff;text-align:center;transition:border-color .2s,box-shadow .2s}
+.view-tabs button.active{box-shadow:inset 0 0 0 1px var(--ink)}
+.view-tabs button img{width:100%;height:66px;object-fit:contain}
+.view-tabs button span{font-size:.64rem;letter-spacing:.05em}
+.visit-optician{padding:20px 22px;border:1px solid var(--line);background:var(--cream);line-height:1.65;color:var(--ink)}
+@media(max-width:520px){.card-image-stage img{padding:10px}.view-tabs button{width:76px}.view-tabs button img{height:54px}}
