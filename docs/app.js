@@ -63,6 +63,6 @@
     if(event.data?.type==='innova-boutique:order-updated')updateChrome();
   });
   $('[data-i="globalOrder"]').addEventListener('click',event=>{if(mode==='b2c'){event.preventDefault();openOrder()}});
-  async function start(){bind();try{const r=await fetch('data/catalog.json');if(!r.ok)throw Error(String(r.status));products=await r.json();render()}catch(error){$('#app').innerHTML='<p class="empty">No se pudo cargar el catálogo. Intenta actualizar la página.</p>';console.error(error)}}
+  async function start(){bind();try{const r=await fetch('data/catalog.json?v=20261110b');if(!r.ok)throw Error(String(r.status));products=await r.json();render()}catch(error){$('#app').innerHTML='<p class="empty">No se pudo cargar el catálogo. Intenta actualizar la página.</p>';console.error(error)}}
   start();
 })();
