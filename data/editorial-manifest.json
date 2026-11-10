@@ -1,0 +1,63 @@
+{
+  "sourceFolder": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+  "assets": [
+    {
+      "path": "media/astrolis-editorial.webp",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Astrolis editorial",
+      "sha256": "536c676bf563e2c10133448a9eb74622d65dd015524099407e69d408c37edc91",
+      "bytes": 56928,
+      "derivativeOf": "output/akoni-originals/media/astrolis-editorial.jpg"
+    },
+    {
+      "path": "media/brand-precision.jpg",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Details Matter / Brand",
+      "sha256": "9723b25b42f4d1449d4e12c165d57bdc52a79d5f96bc078074dab90b61cf5fbc",
+      "bytes": 699843
+    },
+    {
+      "path": "media/detail-craft.jpg",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Details Matter / Brand",
+      "sha256": "652b9fa01dc490c77bc5534c920f10ac7a1e00fe43faf0ff9f911da53738aad8",
+      "bytes": 1435066
+    },
+    {
+      "path": "media/editorial-key-vision.jpg",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Collection XII · Key to Vision",
+      "sha256": "7cefc7521dffd42887166302765662c17aa3d7d5b3c642e03c1bd645cfd513a6",
+      "bytes": 523800
+    },
+    {
+      "path": "media/editorial-stars.jpg",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Iconic Stars",
+      "sha256": "4f306f352b23c1495d84f96bc56c028d7e189845268aa3473358c0381243ecd7",
+      "bytes": 1311230
+    },
+    {
+      "path": "media/hero-key-vision.jpg",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Collection XII · Key to Vision",
+      "sha256": "4fb6fb6c8812611babc4783be0748cdbf14b6bf06c11b8e2ea88011d6f562298",
+      "bytes": 510088
+    },
+    {
+      "path": "media/hero-stars.jpg",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Iconic Stars",
+      "sha256": "a44820aa25a1e1ee60c9a282df3ea9e646960be9441983953e58333a382fdcc4",
+      "bytes": 953680
+    },
+    {
+      "path": "media/key-to-vision.mp4",
+      "source": "https://drive.google.com/drive/folders/1fSJJkmfQCB0PvegGeJzaTexjUYAjXFr9",
+      "collection": "Collection XII · Key to Vision",
+      "sha256": "f80b3c253b48cc0839f3e17bd242e22d2de74afcb0cab7a62a85ed8274fa88b0",
+      "bytes": 31864678,
+      "derivativeOf": "output/akoni-film-15s-original.mov (15 s, muted H.264 web conversion)"
+    }
+  ]
+}

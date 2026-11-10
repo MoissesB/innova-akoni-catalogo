@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://innova-boutique.com/akoni/sitemap.xml

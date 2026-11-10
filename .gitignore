@@ -1,0 +1,6 @@
+data/*.xlsx
+data/drive-inventory.json
+data/drive-download-plan.json
+.DS_Store
+__pycache__/
+*.pyc
