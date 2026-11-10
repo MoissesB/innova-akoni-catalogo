@@ -123,6 +123,10 @@ def main() -> None:
             continue
         group["variants"].append({"sku": sku, "ean": "", "color": "", "colorCode": "", "size": "", "bridge": "", "temple": "", "frontMaterial": "", "templeMaterial": "", "lensMaterial": "", "lensCategory": "", "madeIn": "", "season": "", "image": item["path"], "imageSource": item["imageUrl"], "side": "", "officialUrl": item["productUrl"]})
     products = list(groups.values())
+    translations_path = ROOT / "data" / "descriptions-es.json"
+    translations = json.loads(translations_path.read_text(encoding="utf-8")) if translations_path.exists() else {}
+    for product in products:
+        product["descriptionEs"] = translations.get(product["descriptionEn"], "")
     products.sort(key=lambda p: (not any(v["season"] == "FW26" for v in p["variants"]), p["name"], p["category"]))
     manifest = {"sourceWorkbook": "data/akoni-ecom-info.xlsx", "sourceSitemap": SITEMAP, "sitemapImages": downloaded, "driveCandidates": list(drive_plan.values()), "models": len(products), "variants": sum(len(p["variants"]) for p in products)}
     (ROOT / "data" / "media-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")

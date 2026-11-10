@@ -5,6 +5,7 @@ Catálogo estático bilingüe (ES/EN) para `innova-boutique.com/akoni/`. No mues
 ## Fuentes y alcance
 
 - Base de comercio electrónico facilitada en la carpeta AKONI de Google Drive: 558 referencias con nombre, EAN, SKU, color, materiales, medidas y descripción.
+- Las 103 descripciones distintas de esa base se presentan en inglés original y en traducción española. Las siete fichas añadidas desde el mapa público solo muestran una descripción general cuando no hay texto oficial en la hoja. Las traducciones editables están en `data/descriptions-es.json`.
 - [Mapa público de productos de Akoni](https://akoni.com/sitemap.xml): 315 imágenes de producto descargadas. Siete referencias públicas adicionales no presentes en la hoja se incorporaron con los datos verificables del mapa.
 - Carpeta de Drive: 409 fotografías de vistas frontales o laterales descargadas para las referencias identificadas. Los originales se conservan localmente en `Innova Boutique/output/akoni-originals/`; el repositorio contiene copias WebP para la web, con sumas SHA-256 y procedencia en `data/optimized-assets.json`.
 - Campañas de Collection XII, Akoni Stars y Details Matter suministradas en Drive. El vídeo de portada es una conversión web sin audio de la película horizontal de 15 segundos de Collection XII. El archivo original queda en `Innova Boutique/output/akoni-film-15s-original.mov`.
