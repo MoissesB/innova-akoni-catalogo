@@ -39,3 +39,30 @@
 .view-tabs button span{font-size:.64rem;letter-spacing:.05em}
 .visit-optician{padding:20px 22px;border:1px solid var(--line);background:var(--cream);line-height:1.65;color:var(--ink)}
 @media(max-width:520px){.card-image-stage img{padding:10px}.view-tabs button{width:76px}.view-tabs button img{height:54px}}
+
+.audience-control{display:grid;gap:3px;min-width:138px;align-content:center}
+.audience-control small{font-size:.53rem;font-weight:700;letter-spacing:.15em;color:var(--muted);white-space:nowrap}
+.header-actions #modeButton{width:100%;padding:8px 10px;border:1px solid var(--ink);background:var(--ink);color:#fff;text-align:left;font-size:.58rem;letter-spacing:.06em}
+.header-actions #modeButton:hover,.header-actions #modeButton:focus-visible{background:#284d46;outline:2px solid var(--gold);outline-offset:2px}
+.cards--collage .campaign-tile{grid-column:span 2}
+.campaign-tile{position:relative;display:block;min-height:440px;overflow:hidden;background:#101b20;color:#fff}
+.campaign-tile img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .65s ease}
+.campaign-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,14,17,.78),transparent 60%)}
+.campaign-tile:hover img{transform:scale(1.04)}
+.campaign-tile__copy{position:absolute;z-index:1;bottom:28px;left:28px;right:28px;display:grid;gap:9px}
+.campaign-tile__copy small{font-size:.62rem;font-style:normal;letter-spacing:.18em}
+.campaign-tile__copy strong{font:400 clamp(2rem,3.5vw,4rem)/1 Georgia,serif}
+.campaign-tile__copy em{font-size:.68rem;font-weight:700;font-style:normal;letter-spacing:.13em;text-transform:uppercase}
+.catalog-grid .campaign-tile--wide{grid-column:1/-1;min-height:370px;margin:1px 0}
+.collection-line-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.collection-line{position:relative;margin:0;min-height:420px;overflow:hidden;background:#182329;color:#fff}
+.collection-line img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .65s ease}
+.collection-line::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,10,13,.72),transparent 50%)}
+.collection-line:hover img{transform:scale(1.035)}
+.collection-line figcaption{position:absolute;z-index:1;left:20px;right:20px;bottom:22px;display:grid;gap:7px}
+.collection-line small{font-size:.61rem;letter-spacing:.16em}
+.collection-line strong{font:400 clamp(1.8rem,2.5vw,3rem)/1 Georgia,serif}
+@media(max-width:1050px){.collection-line-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.collection-line{min-height:370px}}
+@media(max-width:780px){.audience-control small{display:none}.campaign-tile{min-height:340px}}
+@media(max-width:520px){.audience-control{min-width:0}.header-actions #modeButton{max-width:98px;padding:7px;font-size:.48rem;line-height:1.25;white-space:normal}.collection-line-grid{gap:7px}.collection-line{min-height:245px}.collection-line figcaption{left:12px;right:12px;bottom:14px}.collection-line strong{font-size:1.5rem}.campaign-tile{min-height:260px}.campaign-tile__copy{bottom:16px;left:16px;right:16px}.campaign-tile__copy strong{font-size:2rem}.catalog-grid .campaign-tile--wide{min-height:250px}}
+@media(prefers-reduced-motion:reduce){.campaign-tile img,.collection-line img{transition:none}}

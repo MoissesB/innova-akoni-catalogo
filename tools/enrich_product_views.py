@@ -103,8 +103,8 @@ def main() -> None:
                 gallery.append({"view": "angle" if front else "front", "path": variant["image"]})
             if side:
                 gallery.append({"view": "side", "path": side["path"]})
-            if variant.get("side") and (not side or variant["side"] != side["path"]):
-                gallery.append({"view": "side" if not side else "detail", "path": variant["side"]})
+            if variant.get("side") and not side:
+                gallery.append({"view": "side", "path": variant["side"]})
             if gallery:
                 variant["gallery"] = gallery
     paths = {entry["path"] for model in catalog for variant in model["variants"] for entry in variant.get("gallery", [])}
